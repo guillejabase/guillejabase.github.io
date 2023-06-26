@@ -20,13 +20,27 @@ window.onscroll = () => {
         let offset = section.offsetTop - 360;
 
         if (top >= offset && top < offset + section.offsetHeight) {
-            for (let a of header.querySelectorAll(".container .nav a")) {
+            for (let a of header.querySelectorAll(".container .nav a.spanish")) {
                 a.classList.remove("active");
-                header.querySelector(`.container .nav a[href*=${section.getAttribute("id")}]`).classList.add("active");
+                header.querySelector(`.container .nav a.spanish[href*=${section.getAttribute("id")}]`).classList.add("active");
+            }
+            for (let a of header.querySelectorAll(".container .nav a.english")) {
+                a.classList.remove("active");
+                header.querySelector(`.container .nav a.english[href*=${section.getAttribute("id")}]`).classList.add("active");
             }
         }
     }
 };
+
+header.querySelector(".container .nav .switchs label.language input").addEventListener("click", () => {
+    header.classList.toggle("language");
+
+    for (let section of sections) {
+        section.classList.toggle("language");
+    }
+
+    footer.classList.toggle("language");
+});
 
 header.querySelector(".container .nav .switchs label.mode input").addEventListener("click", () => {
     header.classList.toggle("mode");
@@ -44,7 +58,7 @@ function skills() {
     if (window.innerHeight - about.getBoundingClientRect().top > 300) {
         let skills = document.getElementsByClassName("progress");
 
-        skills[0].classList.add("jsandts");
+        skills[0].classList.add("jsorts");
         skills[1].classList.add("python");
         skills[2].classList.add("csharp");
         skills[3].classList.add("htmlandcss");

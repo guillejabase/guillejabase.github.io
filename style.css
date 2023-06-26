@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.english {
+    display: none;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -66,6 +70,14 @@ header .container .nav a {
     color: rgba(127.5, 127.5, 127.5);
     margin-left: 20px;
     font-size: 20px;
+}
+
+header.language .container .nav a.spanish {
+    display: none;
+}
+
+header.language .container .nav a.english {
+    display: flex;
 }
 
 header.sticky .container .nav a {
@@ -237,6 +249,15 @@ section.home .profile .content h2 {
     font-weight: normal;
 }
 
+section.home.language .profile .content h2.spanish {
+    display: none;
+}
+
+section.home.language .profile .content h2.english {
+    display: flex;
+    justify-content: center;
+}
+
 section.home.mode .profile .content h2 {
     color: rgba(255, 255, 255);
 }
@@ -307,14 +328,40 @@ section.about .container h2 {
     font-size: 40px;
 }
 
-section.about .container h3 {
-    margin-bottom: 20px;
-    font-size: 25px;
+section.about.language .container h2.spanish {
+    display: none;
+}
+
+section.about.language .container h2.english {
+    display: flex;
+    justify-content: center;
 }
 
 section.about .container p {
     text-align: justify;
     font-size: 17.5px;
+}
+
+section.about.language .container p.spanish {
+    display: none;
+}
+
+section.about.language .container p.english {
+    display: block;
+    text-align: justify;
+}
+
+section.about .container h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section.about.language .container h3.spanish {
+    display: none;
+}
+
+section.about.language .container h3.english {
+    display: flex;
 }
 
 section.about .container .row {
@@ -329,6 +376,14 @@ section.about .container .row .column {
 section.about .container .row .column .fact {
     margin-bottom: 20px;
     font-size: 17.5px;
+}
+
+section.about.language .container .row .column .fact strong.spanish {
+    display: none;
+}
+
+section.about.language .container .row .column .fact strong.english {
+    display: initial;
 }
 
 section.about .container .row .column .fact i {
@@ -377,6 +432,14 @@ section.about .container .row .column .interests .interest span {
     font-size: 17.5px;
 }
 
+section.about.language .container .row .column .interests .interest span.spanish {
+    display: none;
+}
+
+section.about.language .container .row .column .interests .interest span.english {
+    display: flex;
+}
+
 section.curriculum {
     background-color: rgba(223.125, 223.125, 223.125);
     color: rgba(0, 0, 0);
@@ -409,9 +472,26 @@ section.curriculum .container h2 {
     font-size: 40px;
 }
 
+section.curriculum.language .container h2.spanish {
+    display: none;
+}
+
+section.curriculum.language .container h2.english {
+    display: flex;
+    justify-content: center;
+}
+
 section.curriculum .container h3 {
     margin-bottom: 20px;
     font-size: 25px;
+}
+
+section.curriculum.language .container h3.spanish {
+    display: none;
+}
+
+section.curriculum.language .container h3.english {
+    display: flex;
 }
 
 section.curriculum .container .row1 {
@@ -421,6 +501,22 @@ section.curriculum .container .row1 {
 section.curriculum .container .row1 .column .skill {
     margin-bottom: 30px;
     font-size: 17.5px;
+}
+
+section.curriculum .container .row1 .column .skill>span>p {
+    display: inline-block;
+}
+
+section.curriculum .container .row1 .column .skill>span>p.english {
+    display: none;
+}
+
+section.curriculum.language .container .row1 .column .skill>span>p.spanish {
+    display: none;
+}
+
+section.curriculum.language .container .row1 .column .skill>span>p.english {
+    display: inline-block;
 }
 
 section.curriculum .container .row1 .column .skill .icon {
@@ -470,12 +566,12 @@ section.curriculum.mode .container .row1 .column .skill .bar .progress span {
     color: rgba(0, 0, 0);
 }
 
-section.curriculum .container .row1 .column .skill .jsandts {
+section.curriculum .container .row1 .column .skill .jsorts {
     width: 0%;
-    animation: 1s jsandts forwards;
+    animation: 1s jsorts forwards;
 }
 
-@keyframes jsandts {
+@keyframes jsorts {
     0% {
         width: 0%;
     }
@@ -572,10 +668,6 @@ section.curriculum.mode .container .row2 .right1 {
     border-left-color: rgba(255, 255, 255);
 }
 
-section.curriculum .container .row2 .right1 h3 {
-    margin-left: 20px;
-}
-
 section.curriculum .container .row2 .left1 .item {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -602,11 +694,31 @@ section.curriculum .container .row2 .column .item h4 {
     font-size: 20px;
 }
 
+section.curriculum.language .container .row2 .column .item h4.spanish {
+    display: none;
+}
+
+section.curriculum.language .container .row2 .column .item h4.english {
+    display: flex;
+}
+
 section.curriculum .container .row2 .column .item .place {
     color: rgba(63.75, 63.75, 63.75);
     display: block;
     font-size: 17.5px;
     font-weight: bold;
+}
+
+section.curriculum .container .row2 .column .item .place.english {
+    display: none;
+}
+
+section.curriculum.language .container .row2 .column .item .place.spanish {
+    display: none;
+}
+
+section.curriculum.language .container .row2 .column .item .place.english {
+    display: flex;
 }
 
 section.curriculum.mode .container .row2 .column .item .place {
@@ -618,7 +730,18 @@ section.curriculum .container .row2 .column .item .date {
     display: block;
     margin-bottom: 10px;
     font-size: 15px;
-    font-weight: bold;
+}
+
+section.curriculum .container .row2 .column .item .date.english {
+    display: none;
+}
+
+section.curriculum.language .container .row2 .column .item .date.spanish {
+    display: none;
+}
+
+section.curriculum.language .container .row2 .column .item .date.english {
+    display: flex;
 }
 
 section.curriculum.mode .container .row2 .column .item .date {
@@ -720,6 +843,22 @@ section.curriculum .container .download {
     z-index: 1;
 }
 
+section.curriculum .container .download p {
+    display: inline-block;
+}
+
+section.curriculum .container .download p.english {
+    display: none;
+}
+
+section.curriculum.language .container .download p.spanish {
+    display: none;
+}
+
+section.curriculum.language .container .download p.english {
+    display: inline-block;
+}
+
 section.curriculum.mode .container .download {
     color: rgba(255, 255, 255);
     border-color: rgba(255, 255, 255);
@@ -773,6 +912,15 @@ section.portfolio .container h2 {
     margin-bottom: 30px;
     text-align: center;
     font-size: 40px;
+}
+
+section.portfolio.language .container h2.spanish {
+    display: none;
+}
+
+section.portfolio.language .container h2.english {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -866,6 +1014,15 @@ footer span {
     color: rgba(191.25, 191.25, 191.25);
     font-family: sans-serif;
     font-size: 15px;
+}
+
+footer.language span p.spanish {
+    display: none;
+}
+
+footer.language span p.english {
+    display: flex;
+    justify-content: center;
 }
 
 footer.mode span {
