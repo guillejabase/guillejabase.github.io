@@ -1,3 +1,4 @@
+let body = document.querySelector("body");
 let header = document.querySelector("header");
 let menu = document.querySelector(".menu");
 let sections = document.querySelectorAll("section");
@@ -5,7 +6,14 @@ let footer = document.querySelector("footer");
 
 menu.addEventListener("click", () => {
     header.classList.toggle("list");
-    document.querySelector("body").classList.toggle("list");
+    body.classList.toggle("list");
+
+    for (let a of header.querySelectorAll(".container .nav a")) {
+        a.addEventListener("click", () => {
+            header.classList.remove("list");
+            body.classList.remove("list");
+        });
+    }
 });
 
 window.addEventListener("scroll", () => {
