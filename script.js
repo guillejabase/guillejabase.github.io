@@ -61,9 +61,9 @@ header.querySelector(".container .nav .switchs label.mode input").addEventListen
 });
 
 function skills() {
-    let about = document.getElementById("about");
+    let curriculum = document.getElementById("curriculum");
 
-    if (window.innerHeight - about.getBoundingClientRect().top > 300) {
+    if (window.innerHeight - curriculum.getBoundingClientRect().top > 600) {
         let skills = document.getElementsByClassName("progress");
 
         skills[0].classList.add("jsorts");
