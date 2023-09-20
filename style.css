@@ -596,6 +596,21 @@ section.curriculum .container .row1 .column .skill .htmlandcss {
     }
 }
 
+section.curriculum .container .row1 .column .skill .office {
+    width: 0%;
+    animation: 1s office forwards;
+}
+
+@keyframes office {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
 section.curriculum .container .row1 .column .skill .python {
     width: 0%;
     animation: 1s python forwards;
@@ -607,7 +622,7 @@ section.curriculum .container .row1 .column .skill .python {
     }
 
     100% {
-        width: 70%;
+        width: 65%;
     }
 }
 
@@ -623,21 +638,6 @@ section.curriculum .container .row1 .column .skill .java {
 
     100% {
         width: 55%;
-    }
-}
-
-section.curriculum .container .row1 .column .skill .csharp {
-    width: 0%;
-    animation: 1s csharp forwards;
-}
-
-@keyframes csharp {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 50%;
     }
 }
 

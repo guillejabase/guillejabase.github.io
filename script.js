@@ -68,8 +68,8 @@ function skills() {
 
         skills[0].classList.add("jsorts");
         skills[1].classList.add("htmlandcss");
-        skills[2].classList.add("python");
-        skills[3].classList.add("java");
-        skills[4].classList.add("csharp");
+        skills[2].classList.add("office");
+        skills[3].classList.add("python");
+        skills[4].classList.add("java");
     }
 }
