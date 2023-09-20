@@ -67,9 +67,9 @@ function skills() {
         let skills = document.getElementsByClassName("progress");
 
         skills[0].classList.add("jsorts");
-        skills[1].classList.add("python");
-        skills[2].classList.add("csharp");
-        skills[3].classList.add("htmlandcss");
-        skills[4].classList.add("sql");
+        skills[1].classList.add("htmlandcss");
+        skills[2].classList.add("python");
+        skills[3].classList.add("java");
+        skills[4].classList.add("csharp");
     }
 }

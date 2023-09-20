@@ -577,7 +577,22 @@ section.curriculum .container .row1 .column .skill .jsorts {
     }
 
     100% {
-        width: 90%;
+        width: 80%;
+    }
+}
+
+section.curriculum .container .row1 .column .skill .htmlandcss {
+    width: 0%;
+    animation: 1s htmlandcss forwards;
+}
+
+@keyframes htmlandcss {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
     }
 }
 
@@ -592,7 +607,22 @@ section.curriculum .container .row1 .column .skill .python {
     }
 
     100% {
-        width: 75%;
+        width: 70%;
+    }
+}
+
+section.curriculum .container .row1 .column .skill .java {
+    width: 0%;
+    animation: 1s java forwards;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
     }
 }
 
@@ -608,36 +638,6 @@ section.curriculum .container .row1 .column .skill .csharp {
 
     100% {
         width: 50%;
-    }
-}
-
-section.curriculum .container .row1 .column .skill .htmlandcss {
-    width: 0%;
-    animation: 1s htmlandcss forwards;
-}
-
-@keyframes htmlandcss {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-section.curriculum .container .row1 .column .skill .sql {
-    width: 0%;
-    animation: 1s sql forwards;
-}
-
-@keyframes sql {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 30%;
     }
 }
 
