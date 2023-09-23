@@ -486,6 +486,10 @@ section.curriculum .container h3 {
     font-size: 25px;
 }
 
+section.curriculum .container .row2 .column.right1 h3 {
+    margin-left: 20px;
+}
+
 section.curriculum.language .container h3.spanish {
     display: none;
 }
