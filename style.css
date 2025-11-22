@@ -52,9 +52,8 @@ body {
 header,
 footer {
     display: flex;
-    flex: 1;
+    flex: 0 0 auto;
     justify-content: center;
-    max-height: max-content;
 }
 
 header .content,
