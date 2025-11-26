@@ -12,10 +12,10 @@
         const theme = document.getElementById('theme');
 
         const updateTheme = () => {
-            const name = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            const name = document.documentElement.classList.contains('dark') ? 'Light' : 'Dark';
 
             theme.textContent = name;
-            theme.title = `toggle to ${name} theme`;
+            theme.title = `Toggle to ${name.toLowerCase()} theme`;
         };
 
         updateTheme();
