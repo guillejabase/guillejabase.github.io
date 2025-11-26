@@ -109,11 +109,8 @@ main {
 
 #photo {
     border: 0.25rem solid var(--text);
-    width: 100%;
-    max-width: 12.5rem;
-    height: 100%;
-    max-height: 12.5rem;
-    object-fit: cover;
+    width: 12.5rem;
+    height: 12.5rem;
     animation: morph 30s infinite ease-in-out alternate; 
 }
 
