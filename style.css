@@ -37,7 +37,7 @@ body {
     background-color: var(--body);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
     gap: 1rem;
     padding: 1rem;
 }
@@ -179,8 +179,9 @@ main {
     height: 1rem;
 }
 
-.skills,
-.networks {
+.technologies,
+.networks,
+.curriculum {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,6 +216,11 @@ main {
     color: #333333;
 }
 
+.bun {
+    background: black;
+    color: white;
+}
+
 .sql {
     background: linear-gradient(to right, #1391ec, #c2d1ff);
     color: white;
@@ -233,6 +239,11 @@ main {
 .github {
     background: #171515;
     color: white;
+}
+
+.watch {
+    border: 2px solid rgb(127.5, 127.5, 127.5);
+    color: var(--text);
 }
 
 @media (max-width: 768px) {

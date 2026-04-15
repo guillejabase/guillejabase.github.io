@@ -7,13 +7,28 @@
     }
 
     const init = () => {
+        const date = new Date(2003, 10, 13);
+        const age = document.getElementById('age');
+
+        if (age) {
+            const today = new Date();
+            let years = today.getFullYear() - date.getFullYear();
+            const hadBirthday = today.getMonth() > date.getMonth() || (today.getMonth() === date.getMonth() && today.getDate() >= date.getDate());
+
+            if (!hadBirthday) {
+                years -= 1;
+            }
+
+            age.textContent = `${years} ${years === 1 ? 'año' : 'años'}`;
+        }
+
         const theme = document.getElementById('theme');
 
         const updateTheme = () => {
             const isDark = document.documentElement.classList.contains('dark');
-            const name = isDark ? 'Light' : 'Dark';
+            const name = isDark ? 'Claro' : 'Oscuro';
             theme.textContent = name;
-            theme.title = `Toggle to ${name.toLowerCase()} theme`;
+            theme.title = `Cambiar a tema ${name.toLowerCase()}`;
         };
         
         theme.addEventListener('click', () => {
